@@ -1,48 +1,71 @@
-body {
-    margin: 0px 
+body{
+    margin:0px;
+    padding: 200px
 }
-
+.danhmuc{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
 nav{
     background-color: #0c4ca3;
-    /*padding: 10px*/
+    padding: 15px
 }
-ul{
-    display: flex; /*linh hoạt*/
-    justify-content: center;
-    /*căn giữa, phải đi cùng display:*/
-    list-style: none; /*bỏ dấu gạch đầu dòng marker*/
-    /*gap: 20px*/ 
+.td{
+    border-right: 1px solid gray;
+    padding: 15px 
 }
-li{
-    padding:15px;
-}
-.border{
-    border-right: 1px solid grey;
-}
-.danhmuc-lienket{
+
+.danhmuclienket{
     color:white;
-    text-decoration: none; /*xóa gạch chân dưới chữ*/
-    font-family: Roboto, Arial, Tahoma;
+    text-decoration-line: none;
 }
-.banner{
-    display: flex;
-    justify-content: center;
+.banner-qc{
+    display:flex;
+    justify-content:center;
+    margin:10px 0px;
 }
-.qc{
-    display: flex;
+.anh-qc{
+    display:flex;
     justify-content: center;
 }
 header{
-    border-bottom:20px solid #f1f1f2 ;
+    border-bottom: 15px solid gray;
 }
 
-    .bc{
-    margin: 50px auto;
-    display: flex;
+.mucgachchan{
+    border-bottom: 1px solid gray;
+    display:flex;
+    justify-content: space-between;
+}
+.mucgachchan div{
+    border-bottom: 5px solid blue;
+    font-size: 30px;
+    color:blue;
+    padding: 15px 
+}
+span{
+    color:gray;
+    float:right;}
+
+.anhtintuc1{
+    display:flex;
     justify-content: center;
+
+}
+.anhtintuc2{
+    display:flex;
+    justify-content: center;
+
 }
 .nd{
-    width: 20%;
-    height: 200px;
-    margin: 0px 5px;
+    padding-left: 10px;
+}
+.cacnganh1{
+    display:flex;
+    justify-content: center;
+}
+.cacnganh2{
+    display:flex;
+    justify-content: center;
 }
