@@ -1,0 +1,91 @@
+body{
+    background-color:black;
+}
+header{
+    display:flex;
+    justify-content: center;
+}
+.timkiem{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.iconhome{
+    color:white;
+
+}
+.thanhtimkiem{
+    color:white;
+    border-radius: 15px;
+}
+.giaodienbentrai{
+    height:600px;
+    width:20%;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+.giaodienbenphai{
+    height:600px;
+    width:20%;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+
+}
+.giaodiengiua{
+    height:600px;
+    width:60%;
+    border-radius: 15px;
+    background-color: yellowgreen;
+
+}
+main{
+    display:flex;
+    gap: 10px,
+}
+.hang-menu{
+    display:flex;
+    border-radius: 15px;
+    gap:15px;
+}
+.all{
+    width: 50px;
+    border-radius: 15px;
+    background-color: aqua;
+
+}
+.music{
+    width: 50px;
+    border-radius: 15px;
+    background-color: aqua;
+
+
+}
+.love{
+    width: 50px;
+    border-radius: 15px;
+    background-color: aqua;
+}
+.hang1{
+
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+   gap:30px;
+    
+}
+.baihat{
+    display:flex;
+    gap:50px;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    background-color: gray;
+    align-items: center;
+    padding-left: 20px;
+
+    
+
+}

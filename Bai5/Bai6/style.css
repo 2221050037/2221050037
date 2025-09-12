@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+}
+header{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.icon-home{
+    color: white;
+}
+.thanhtimkiem{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 100px;
+}
+main{
+    display: flex;
+    gap: 10px;
+}
+.thuvien{
+    width: 20%;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(31, 30, 30);
+}
+.manhinhchinh{
+    width: 60%;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(45, 43, 43);
+}
+.yeuthich{
+    width: 20%;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(31, 30, 30);
+}
+.tab-menu{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.tab{
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px
+}
+.listsong{
+    margin-top: 20px;
+}
+.hang{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+.song{
+    display:flex;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: gray;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    color: white;
+}
+.song img{
+    border-radius: 10px 0 0 10px;
+    width: 50px;
+    height: 40px;
+}

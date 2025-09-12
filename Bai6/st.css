@@ -1,0 +1,141 @@
+body{
+    background-color:black;
+}
+header{
+    display:flex;
+    justify-content: center;
+}
+.timkiem{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.iconhome{
+    color:white;
+
+}
+.thanhtimkiem{
+    color:black;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+.giaodienbentrai{
+    height:1000px;
+    width:20%;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+.giaodienbenphai{
+    height:600px;
+    width:20%;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+
+}
+.giaodiengiua{
+    height:600px;
+    width:60%;
+    border-radius: 15px;
+    background-color: yellowgreen;
+
+}
+main{
+    display:flex;
+    gap: 10px,
+}
+.hang-menu{
+    display:flex;
+    border-radius: 15px;
+    gap:15px;
+    height: 50px;
+    width:50px;
+
+}
+.all{
+    width: 50px;
+    border-radius: 15px;
+    background-color: aqua;
+
+}
+.music{
+    width: 50px;
+    border-radius: 15px;
+    background-color: aqua;
+
+
+}
+.love{
+    width: 50px;
+    border-radius: 15px;
+    background-color: aqua;
+}
+.hang1{
+
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+   gap:30px;
+    
+}
+.baihat{
+    display:flex;
+    gap:50px;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    background-color: gray;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+
+.baihatbentrai{
+
+    align-items:center;
+    padding-left:20px;
+    gap:50px;
+    padding-bottom: 20px;
+}
+.tacvu{
+    display:flex;
+    gap:70px;
+    color:brown;
+    padding: 20px 20px;
+}
+.create{
+    border-radius: 15px;
+    width:50px;
+    height:30px;
+    background-color: gray;
+    padding: 10px 10px;
+}
+.tacvus{
+    display:flex;
+    gap:20px;
+
+}
+.danhsach{
+    width: 70px;
+    height:30px;
+    background-color: gray;
+    padding: 10px;
+    color:blueviolet;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+.danhsachbaihatbentrai{
+    padding-top: 50px;
+    overflow: scroll;
+    height:600px;
+}
+.tkbt{
+    display:flex;
+    margin: 30px;
+    gap: 100px;
+}
+
