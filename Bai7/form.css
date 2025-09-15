@@ -1,0 +1,49 @@
+header{
+    margin:0px;
+    justify-content: center;
+    width:100%;
+}
+
+main{
+   
+    margin:auto;
+    border-bottom: 1px solid gray;
+    width:35%;
+    height:1000px;
+    justify-content:center;
+    background-color:gray;
+    border-radius: 15px;
+    
+}
+.ten1{
+
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    gap:200px;
+    border-radius: 15px;
+    padding:10px;
+    gap: 50px;
+}
+.ngaysinh{
+    margin-top: 20px;
+
+}
+.gioitinh{
+    margin-top: 20px;
+    
+}
+
+.sdt-email{
+    margin-top:200px;
+    padding: 10px;
+    border-radius: 15px;
+   
+}
+.password{
+    margin-top: 20px;
+    border-radius: 15px;
+    padding:10px;
+
+}
+
