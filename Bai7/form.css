@@ -1,49 +1,86 @@
-header{
-    margin:0px;
-    justify-content: center;
-    width:100%;
-}
-
-main{
-   
+.dangnhap{
+    width: 40%;
     margin:auto;
-    border-bottom: 1px solid gray;
-    width:35%;
-    height:1000px;
-    justify-content:center;
-    background-color:gray;
-    border-radius: 15px;
-    
+    border: 1px solid gray;
+    padding: 20px 20px;
 }
-.ten1{
-
-    margin-top: 20px;
+.header{
+    place-items: center;
+    padding-top: 20px;
+}
+.header1{
+    margin-bottom: 20px;
+}
+.name{
+    margin-top: 30px;
     display:flex;
+    justify-content: space-between;
+}
+.name1 input{
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 50px;
+}
+.name2 input{
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.ngaythangnamsinh{
+    display:flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: center;
-    gap:200px;
-    border-radius: 15px;
-    padding:10px;
-    gap: 50px;
+    padding: 20px 50px;
 }
-.ngaysinh{
-    margin-top: 20px;
-
+.thangsinh select{
+     border-radius: 10px;
+    padding: 10px;
+    width: 100px;
 }
-.gioitinh{
-    margin-top: 20px;
+.namsinh select{
+     border-radius: 10px;
+    padding: 10px;
+    width: 100px;
     
 }
-
-.sdt-email{
-    margin-top:200px;
+.ngaysinh select{
+    border-radius: 10px;
     padding: 10px;
-    border-radius: 15px;
-   
+    width: 100px;
 }
-.password{
+
+.gioitinh{
+    display:flex;
+    padding: 10px;
+    gap: 30px;
+    border-radius: 10px;
+    justify-content: center;
+
+}   
+.email input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
     margin-top: 20px;
-    border-radius: 15px;
-    padding:10px;
+    margin-bottom: 20px;
+}
+.password input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit input{
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 100px;
+    margin-left: 250px;
 
 }
-

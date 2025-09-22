@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        //viết chú thích trong js
+        //nối chuỗi: dùng dấu +
+        document.writeln("hello world <br>");
+        //2 cách khai báo biến: var name = value; / let name = value;
+        let hoTen = "Nguyen Thi Thuy";
+        document.writeln(hoTen + "<br>");
+        //Hằng
+        const pi = 3.14;
+
+        let soThuNhat = 10;
+        let soThuHai = 5;
+        let ketQua = 0;
+        //phép cộng:
+        ketQua = soThuNhat + soThuHai;
+        document.writeln(ketQua);
+        //phép trừ:
+        ketQua = soThuNhat - soThuHai;
+        document.writeln(ketQua);
+        //phép nhân:
+        ketQua = soThuNhat * soThuHai;
+        document.writeln(ketQua);
+        //phép chia:
+        ketQua = soThuNhat / soThuHai;
+        document.writeln(ketQua);
+        //phép ++:
+        ketQua++;
+        document.writeln(ketQua);
+        //phép --:
+        ketQua--;
+        document.writeln(ketQua);
+        //phép chia lấy dư:
+        ketQua = soThuNhat % soThuHai;
+        document.writeln(ketQua);
+        //phép +=:
+        soThuNhat += soThuHai;
+        document.writeln(soThuNhat);
+        //phép -=:
+        soThuNhat -= soThuHai;
+        document.writeln(soThuNhat);
+
+
+        let soThuBa = 10;
+        let soThuTu = "5";
+        soThuBa += soThuTu;
+        document.writeln(soThuBa);
+
+        let soThuNam = 10;
+        let soThuSau= "10";
+        document.writeln(soThuNam == soThuSau);
+        //phép != 
+        document.writeln(soThuNam != soThuSau);
+        document.writeln(soThuNam !== soThuSau);
+            document.writeln(!(soThuNam !== soThuSau));
+
+        //Hai dấu bằng không quan tâm tới kiểu dữ liệu, 
+        // nếu 3 dấu bằng nó sẽ xét cả kiểu dữ liệu lẫn giá trị//
+        let thongTinSinhVien = {
+            hoTen: "Nguyễn Thị Thúy",
+            tuoi: 20,
+            gioiTinh: true,
+            lop: "khoa hoc may tinh k68",
+            diaChi:
+           
+            {thanhPho: "Thai Binh",
+            quanHuyen: "Dong Hung",
+            duong:"Vo Van",
+            soNha: 18,}
+        }
+        let diaChiThuy= {
+            thanhPho: "Thai Binh",
+            quanHuyen: "Dong Hung",
+            duong:"Vo Van",
+            soNha: 18,
+            
+
+        };
+
+
+    
+
+        thongTinSinhVien.diaChiThuy =
+        document.writeln(
+            ("Xin chào bạn: " + thongTinSinhVien.hoTen + thongTinSinhVien.lop)
+        )
+        document.writeln(
+            "Xin chào bạn:" +thongTinSinhVien.hoTen + thongTinSinhVien.lop +"Số nhà:"+ thongTinSinhVien.diaChi.soNha
+        )
+        document.writeln(
+            "Xin chào bạn:" +thongTinSinhVien.hoTen + thongTinSinhVien +"Năm sinh:" +(namNay - thongTinSinhVien.tuoi)
+        );
+
+        let soThuMuoi ="10";
+        soThuMuoi = parseInt(soThuMuoi);
+        document.writeln(typeof (soThuMuoi));
+
+        
+
+
+    </script>    
+</body>
+</html>
