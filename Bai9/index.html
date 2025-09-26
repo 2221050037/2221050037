@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let donHang = {
+            maDonHang: "2221050037",
+            thongTinKhachHang :{
+                hoTen: "Nguyen Thi Thuy",
+                soDienThoai: "0397246044",
+                trangThaiThanhVien: true,
+
+            },
+            danhSachSanPham:{
+                caPhe:{
+                    maSanPham: "1111",
+                    tenSanPham: "cà phê",
+                    soLuong: 2,
+                    giaTien: 20,
+
+                },
+                traXanh:{
+                    maSanPham: "1112",
+                    tenSanPham: "trà xanh",
+                    soLuong: 3,
+                    giaTien: 25,
+                },
+
+                traSua:{
+                    maSanPham: "1113",
+                    tenSanPham: "trà sữa",
+                    soLuong: 2,
+                    giaTien: 40,
+                },
+
+
+            },
+            trangThaiThanhToan: true,
+            diaChiGiaoHang: "Hà Nội",
+        }
+        
+        
+        tongTienCaPhe = donHang.danhSachSanPham.caPhe.soLuong * donHang.danhSachSanPham.caPhe.giaTien;
+        tongTienTraXanh = donHang.danhSachSanPham.traXanh.soLuong * donHang.danhSachSanPham.traXanh.giaTien;
+        tongTienTraSua = donHang.danhSachSanPham.traSua.soLuong * donHang.danhSachSanPham.traSua.giaTien;
+        tongTatCa = tongTienCaPhe + tongTienTraXanh + tongTienTraSua;
+        document.writeln(tongTatCa);
+
+        //string
+        let hoTen="Nguyễn Thị Thúy";
+        document.writeln(hoTen.length);
+        let myString ="Hello Thúy"
+        document.writeln(myString[4]);
+        document.writeln(myString[0]);
+        document.writeln(myString.slice(1,4)); //Lấy theo khoảng từ 1 đến hết số 3 không lấy số 4 
+        document.writeln(myString.replace(" ","hi")); 
+        //Chuyển đổi chữ thường thành chữ hoa và chữ viết hoa thành chữ thường .toUpperCase() và toLowerCase
+        //document.writeln(myString.toLocaleUpperCase());
+        //Tìm kiếm chuỗi: phương thức .indexOf()
+        document.writeln(myString.indexOf("e")); //Cần tìm vị trí chính xác thì dùng
+        document.writeln(myString.includes("e")); //Cần tìm có hay không (true/false) thì dùng 
+       //tách chuỗi thành một mảng dùng split 
+       document.writeln(myString.split(" ").length) 
+       document.writeln(myString.split(" ")) //Có 2 phần từ 
+       document.writeln(myString.split("e")) 
+       //kiểm tra chuỗi
+       document.writeln(myString.startsWith('Thuy'));
+
+       //Thuộc tính number
+       var pi = 3.14566666;
+       document.writeln(pi.toFixed(3));
+       document.writeln(isNaN(10)); //it not a number không phải là số 
+       document.writeln(isNaN("10")); //BTVN
+
+       //Ngày và giờ
+       //let today = new Date() //tạo ngày giờ hiện tại
+       //let today = new Date('2023-09-26')
+       let today = new Date('')
+       document.writeln(today);
+       //lấy ra năm
+       document.writeln(today.getFullYear()); //lấy tháng getMonth
+        //document.writeln(today.getMonth());
+        //document.writeln(today.getDate());//lấy ngày
+        //document.writeln(today.getDay); //Lấy thứ bắt đầu là chủ nhật = 0 
+        //document.writeln(today.getSeconds);
+        
+    
+
+        
+    </script>
+</body>
+</html>
