@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Mảng
+        let arr = [1,2,3,4,'a', 'b', 'c', 2,3];
+        //let ten = 'ten';
+       // let thongTin = {
+        //    ten: ten 
+       // }
+        //typeOf: Kiểm tra kiểu dữ liệu của biến (không dùng cho mảng)
+        document.writeln(Array.isArray(arr))
+        document.writeln(arr.length); //length kiểm tra độ dài của mảng 
+        document.writeln(arr[2]); //Gọi phần tử số 3 ở trong mảng 
+        document.writeln(arr.indexOf(3)); //trả về vị trí đầu tiên (không có trả về -1)
+        document.writeln(arr.lastIndexOf(3));//trả về vị trí xuất hiện cuối cùng 
+        arr[3]=6;
+        document.writeln(arr);
+        let a, b, c, d;
+        a  = [1,2,3];
+        b = "javascript";
+        c = [42, "JS"];
+        d = a.concat(b,c);
+       // d= d.join(' '); //Bỏ dấu , 
+       d.pop(); //Xóa phần tử cuối cùng trong mảng 
+
+
+        document.writeln(d);
+        //document.writeln(Array.isArray(d))
+        d.push("<br>" + "Thúy" ); //Thêm vào cuối mảng 
+        document.writeln(d);
+        d.reverse();
+        document.writeln(d); //Đảo mảng 
+        d.shift() //Xóa phần tử đầu tiên
+        d.unshift() //thêm phần tử vào đầu mảng 
+
+        //các câu lệnh if/else 
+        let so = 10;
+        if(so % 2 == 0){
+            document.writeln("Số này là số chẵn")
+        }
+        else{
+            document.writeln("Số này là số lẻ")
+        }
+
+        let so2 = "10000000000000000000000005";
+        document.writeln(so2.length);
+        let soCuoi = parseInt(so2[so2.length -1]);
+         if(soCuoi % 2 == 0){
+            document.writeln("Số này là số chẵn")
+        }
+        else{
+            document.writeln("Số này là số lẻ")
+        }
+
+        //vidu2
+        let now = new Date().getHours();
+        // 5 -> 10: Chào buổi sáng 
+        if(now > 5 && now <= 10){
+            document.writeln("Chào buổi sáng")
+        }
+        else if(now > 10 && now <= 13){
+            document.writeln("Chào buổi trưa")
+        }
+        else if(now > 13 && now <= 17) {
+            document.writeln("Chào buổi chiều")
+
+        }
+        else if(now > 17 && now <= 22){
+            document.writeln("Chào buổi tối ")
+        }
+        else{
+            document.writeln("Chào buổi khuya")
+        }
+        //a b c 
+        //tổng = điểm a nhân 0.6 cộng điểm b nhân 0.3 cộng c nhân 0.1 
+        // a = 1, b = 0, c=F BTVN
+        let diema = 8;
+        let diemb = 7;
+        let diemc = 9;
+        tong = diema * 0.6 + diemb*0.3 + diemc*0.1;
+        
+        if(tong>= 8 && tong <= 10){
+            document.write("Điểm giỏi")
+        }
+        else if(tong >=7 && tong< 8){
+            document.writeln("Điểm B")
+        }
+        else if(tong >= 5 && tong <7){
+            document.writeln("Điểm C")
+        }
+        else if(tong >= 4 && tong<5){
+            document.writeln("Điểm D")
+        }
+        else{
+            document.writeln("Điểm F")
+        }
+
+    </script>
+</body>
+</html>
