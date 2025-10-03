@@ -81,12 +81,19 @@
         //tổng = điểm a nhân 0.6 cộng điểm b nhân 0.3 cộng c nhân 0.1 
         // a = 1, b = 0, c=F BTVN
         let diema = 8;
-        let diemb = 7;
+        let diemb = 11;
         let diemc = 9;
         tong = diema * 0.6 + diemb*0.3 + diemc*0.1;
+
+        if (diema < 100 && diema >10 || diemb < 100 && diemb>10 || diemc <100 && diemc<10) {
+        document.writeln("Nhập nhầm điểm (có điểm > 10)");
+        } 
         
-        if(tong>= 8 && tong <= 10){
-            document.write("Điểm giỏi")
+        else if (diema == 0 || diemb == 0 || diemc == 0) { 
+            document.writeln("Điểm F vì có ít nhất một điểm bằng 0")
+        } 
+        else if(tong>= 8 && tong <= 10){
+            document.writeln("Điểm giỏi")
         }
         else if(tong >=7 && tong< 8){
             document.writeln("Điểm B")
@@ -97,8 +104,11 @@
         else if(tong >= 4 && tong<5){
             document.writeln("Điểm D")
         }
-        else{
+        else if(tong < 4 ){
             document.writeln("Điểm F")
+        }
+        else{
+            document.writeln("Điểm không hợp lệ")
         }
 
     </script>
