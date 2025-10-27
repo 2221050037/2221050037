@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>Nhập hàm tính tổng</p>
+    <div>
+        <p>Nhập số thứ nhất</p>
+        <input type = "number" id = "soThuNhat">
+    </div>
+    <div>
+        <p>Nhập số thứ hai</p>
+        <input type = "number" id = "soThuHai">
+    </div>
+    <div>
+        <button onclick = "tinhTong()">Tính tổng</button>
+    </div>
+    <div>
+        Kết quả: <input type = "number" id = "ketQua" class ="ketQua">
+    </div> -->
+    <div>
+        Điểm A: <input type = "number" id = "diemA" >
+    </div>
+    <div>
+        Điểm B: <input type = "number" id = "diemB">
+    </div>
+    <div>
+        Điểm C: <input type = "number" id = "diemC">
+    </div>
+    <div>
+        <button onclick = "tinhDiem()">Tính điểm</button>
+    </div>
+    <div>
+        Điểm hệ chữ: <input type = "text" id = "ketQua">
+    </div>
+
+
+    <script>
+        //Tạo cấu trúc prompt gõ Họ và tên và in ra ngoài màn hình 
+        // let ten = prompt("Nhập họ và tên của bạn", "Nhập họ và tên")
+        // function tenc(){
+        //     document.writeln(ten)
+        // }
+        // tenc()
+
+        // //tạo một hàm không tham số khi gọi đến hàm đấy lại in ra được người nhập vào prompt 
+        // let ten1 = prompt("Nhập họ và tên của bạn", "Nhập họ và tên")
+        // function tenc(){
+        //     document.writeln(ten1)
+        // }
+        // tenc()
+
+        //Tạo một hàm có tham số ở prompt nhập vào một số bất kỳ in ra xin chào số lần ứng với số đã nhập  
+       // Hàm có tham số n
+    //    let soLan = prompt("Nhập vào một số bất kỳ:");
+    //     function chaoNhieuLan(n) {
+    //         for (let i = 1; i <= n; i++) {
+    //             document.write("Xin chào!<br>");
+    //         }
+    //     }
+
+    //     // Gọi hàm với tham số vừa nhập (chuyển sang kiểu số)
+    //     chaoNhieuLan(Number(soLan));
+        // function tinhTong(){
+        //     let soThuNhat = parseFloat(document.getElementById("soThuNhat").value)
+        //     let soThuHai = parseFloat(document.getElementById("soThuHai").value)
+            
+        //     let canhBao = ""
+        //     if(!soThuNhat){
+        //         canhBao += "Vui lòng nhập lại số thứ nhất"
+        //     }
+        //     if(!soThuHai){
+        //         canhBao += "Vui lòng nhập lại số thứ hai"
+        //     }
+        //     if(canhBao){
+        //         alert(canhBao);
+        //     }
+        //     let tong = soThuNhat + soThuHai
+        //     // document.writeln(tong); 
+        //     document.getElementById("ketQua").value=tong
+        // }
+
+        function tinhDiem(){
+            let diemA = parseFloat(document.getElementById("diemA").value)
+            let diemB = parseFloat(document.getElementById("diemB").value)
+            let diemC = parseFloat(document.getElementById("diemC").value)
+        let canhBao = "";
+            if(!diemA|| diemA<0|| diemA>10 ){
+                canhBao += "Vui lòng nhập lại điểm A";
+            }
+            if(!diemB|| diemB<0 || diemB>10){
+                canhBao += "Vui lòng nhập lại điểm B";
+            }
+            if(!diemC|| diemC<0||diemC>10){
+                canhBao += "Vui lòng nhập lại điểm C";
+            }
+            if(canhBao){
+                alert(canhBao);
+            }
+        
+        let diemChu = diemA*0.6 + diemB*0.3 + diemC*0.1
+        if(diemChu > 9 && diemChu <10){
+            document.getElementById("ketQua").value = "A+"
+        }
+        else if(diemChu >8 && diemChu<9 ){
+            document.getElementById("ketQua").value = "A"
+        }
+        else if(diemChu >7 && diemChu <8){
+            document.getElementById("ketQua").value = "B+"
+        }
+        else if(diemChu >6 && diemChu <7){
+            document.getElementById("ketQua").value = "B"
+        }
+        else if(diemChu >5 && diemChu <6){
+            document.getElementById("ketQua").value = "C+"
+        }
+        else if(diemChu >4 && diemChu <5){
+            document.getElementById("ketQua").value = "C"
+        }
+        else{
+            document.getElementById("ketQua").value = "F"
+        }
+
+    }
+
+
+
+
+    </script>
+</body>
+</html>

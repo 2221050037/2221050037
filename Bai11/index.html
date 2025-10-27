@@ -76,30 +76,103 @@
 
         // }
         // sayHello()
-        // sayHello()
-        // sayHello()
         
         //không có tham số 
-        function sayHello(){
-        document.writeln("Xin chào");
-       }
-       sayHello();
+    //     function sayHello(){
+    //     document.writeln("Xin chào" + "<br>");
+    //    }
+    //    sayHello();
 
        //có tham số 
 
-       let ten = prompt('Nhập họ tên', "Ví dụ:ABC");
-       let namSing = prompt('Nhập năm sinh', "Ví dụ: 1997");
+    //    function sayHello2(ten, namSinh){
+    //     document.writeln("Xin chào" + ten + "nam sinh" + namSinh);
 
-       function sayHello2(ten, namSinh){
-         document.writeln("Xin chào" +ten+" "+namSinh);
-       }
-       sayHello2("Thúy", "2004");
-
-
-
+    //    }
+    //    sayHello2("Thúy", 2003);
 
 
        
+    //    document.writeln("<hr>");
+    //    //for
+    //    let enter = "<br>";
+    // //    for (let i = 1; i <=1000; i++){
+    // //     document.writeln(i + " " + "Tôi xin lỗi " + enter);
+    // //    }
+
+    // let danhSach = ["Dương Trần Nhật	Anh ", "Dương Vũ	Anh ", "Trần Vũ Hải	Anh ", "Bùi Ngọc	Bích ", "Phạm Quốc	Bình ", "Nguyễn Văn	Chung ", "Hoàng Mạnh	Cường ", "Ngô Hoàng	Dương ", "Phạm Văn	Đại ", "Nguyễn Đình	Đạt ", "Phạm	Đức ", "Vũ Trung	Đức ", "Phạm Hương	Giang ", "Phạm Quang	Hậu ", "Trần Văn	Hiệp ", "Nguyễn Văn	Hoàng ", "Phạm Quốc	Hoàng ", "Phạm Thị	Huế ", "Trần Công	Hùng ", "Đào Thế	Huy ", "Đỗ Quang	Huy ", "Phạm Quang	Huy ", "Phạm Thành	Khang ", "Bùi Văn	Khiêm ", "Nguyễn Tiến	Khởi ", "Đỗ Trung	Kiên ", "Vương Hà	Linh ", "Đào Quang	Lộc ", "Ngô Gia	Lộc ", "Bùi Văn	Mạnh ", "Nguyễn Văn	Mạnh ", "Phan Văn	Mạnh ", "Trương Công	Minh ", "Đỗ Thành	Nam ", "Lê Duy	Nam ", "Nguyễn Hoàng	Nam ", "Nguyễn Anh	Quân ", "Cao Thị Thu	Quyên ", "Phạm Gia	Tài ", "Nguyễn Thị Thanh	Tâm © ", "Nguyễn Đình	Thái ", "Lưu Tiến	Thành ", "Trần Văn	Thành ", "Nguyễn Thị	Thúy ", "Nguyễn Thị	Thúy ", "Bùi Duy	Tiến ", "Nguyễn Văn	Tiến ", "Đỗ Văn	Trung ", "Phạm Đan	Trường ", "Lê Thị Cẩm	Tú ", "Phan Văn	Tuân ", "Cao Thái	Tuấn ", "Nguyễn Duy	Tuấn ", "Nguyễn Huy	Tuấn ", "Thiều Văn	Việt ", "Nguyễn Kiều	Vy"];
+    // //     for (let i = 0; i<danhSach.length; i++){
+    // //         document.writeln(i + "Xin lỗi " +danhSach[i] + enter);
+    // //     }
+
+    //Đếm xem trong lớp có bao nhiêu người họ nguyễn 
+    // let count = 0;
+    // for (let i = 0; i <danhSach.length; i++){
+    //     danhSach[i] = danhSach[i].toUpperCase();
+    //     if (danhSach[i].toUpperCase().startsWith("Nguyễn")==true){
+    //         count = count+1;
+    //     }
+    //     document.writeln("<br>" + "Số người có họ Nguyễn" + count);
+    // }
+
+    //while/ do- while
+    //while(điều kiện): ĐK đúng thì chạy
+    //do(lệnh) - while (Điều kiện): Thực hiện lệnh trước rồi ktra điều kiện, nếu đk đúng thì chạy 
+    // let i = 0;
+    // while(i<=10){
+    //     document.writeln("Đây là số " + i);
+    //     i = i +1;
+    // }
+        //popup box
+        // alert("Lưu ý");
+        // let hello = confirm("Đây là nút bấm"); //hiện 2 lựa chọn ok và cancel 
+        // if(hello == true){
+        //     document.writeln("Bấm Ok")
+        // } else{
+        //     document.writeln("Bấm thoát")
+        // }
+        // let chao = prompt("Nhập họ và tên của bạn", "Nhập họ tên");
+        // document.writeln(chao);
+
+       // //Có tham số
+        // // function + tên hàm() {
+
+        // // }
+        // function sayHello(){
+        //     document.writeln("xin chào");
+
+        // }
+        // sayHello()
+        
+        //không có tham số 
+    //     function sayHello(){
+    //     document.writeln("Xin chào" + "<br>");
+    //    }
+    //    sayHello();
+
+       //có tham số 
+
+    //    function sayHello2(ten, namSinh){
+    //     document.writeln("Xin chào" + ten + "nam sinh" + namSinh);
+
+    //    }
+    //    sayHello2("Thúy", 2003);
+
+    let ten = prompt ("Nhập họ và tên", "Nhập tên");
+       let namSinh = prompt ("Nhập năm sinh", "Nhập năm");
+       let tenVo = prompt ("Nhập tên của vợ", "Nhập tên");
+       let namSinhVo = prompt ("Nhập năm sinh của vợ", "Nhập năm");
+       let tenConTrai = prompt("Nhập tên của con", "Nhập tên");
+       let namSinhConTrai = prompt("Nhập năm sinh của con trai", "Nhập năm");
+       let enter = "<br>";
+       function say (ten, namSinh, tenVo, namSinhVo, tenConTrai, namSinhConTrai){
+        document.writeln("Tên: " + ten + " " + "Năm sinh: " + namSinh + enter);
+        document.writeln("Tên của vợ " + tenVo + "Năm sinh của vợ: " + namSinhVo + enter);
+        document.writeln("Tên của con trai: " + tenConTrai + "Năm sinh của con trai: " + namSinhConTrai );
+
+
+       } 
+       say(ten, namSinh, tenVo, namSinhVo, tenConTrai, namSinhConTrai);
             
     </script>
 </body>
