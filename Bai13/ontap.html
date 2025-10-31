@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+  
+    
+
+</style>
+</head>
+<body>
+<h1>Tính chỉ số BMI</h1>
+<h1>Công thức: Cân năng / (Chiều cao * Chiều cao)</h1>
+
+<h1>Cân nặng: Kg</h1>
+
+<h1>Chiều cao: m</h1>
+
+<!-- Tạo input cho phép nhập vào chiều cao cân nặng
+
+Tạo nút bấm kiểm tra chỉ số BMI
+
+Trường hợp 1: Người dùng không nhập hoặc nhập sai thông tin phải cảnh báo
+
+Trường hợp 2: Nhập đúng, hiển thị được chỉ số BMI và hình ảnh tương ứng -->
+<div class = "bentraivaphai">
+
+<div class = "bentrai">
+<div>
+    Cân Nặng: <input type = "number" id = "canNang">
+</div>
+<div>
+    Chiều Cao: <input type = "number" id = "chieuCao">
+</div>
+<div><button onclick = "ketQua()">Kết quả</button></div>
+<div>Chỉ số bmi: <input readonly id = "chiSo"></div>
+</div>
+<div class = "benphai">
+    <img class = "anh" src = " ">
+</div>
+</div>
+<script>
+    function ketQua(){
+    let canNang = Number(document.getElementById('canNang').value)
+    let chieuCao = Number(document.getElementById('chieuCao').value)
+    let canhBao = ""
+    let bmi = (canNang/(chieuCao * chieuCao)).toFixed(2)
+
+    if(!canNang|| canNang <0 ){
+        canhBao += "Nhập lại cân nặng "
+    }
+    if(!chieuCao || chieuCao < 0 ){
+        canhBao +="Nhập lại chiều cao"
+    }
+    if(canhBao){
+        alert(canhBao)
+    }
+    if(bmi >= 0 && bmi <= 18.5){
+        document.getElementById('chiSo').value=bmi
+        document.getElementsByClassName('anh')[0].src = "./thieucan.jpg"
+    }
+    if(bmi > 18.5 && bmi <= 24.9){
+        document.getElementById('chiSo').value=bmi
+        document.getElementByClassName('anh')[0].src = "./binhthuong.jpg"
+    }
+    if(bmi > 25 && bmi <= 29.9){
+        document.getElementById('chiSo').value=bmi
+        document.getElementByClassName('anh')[0].src = "./thuacan.jpg"
+    }
+    if(bmi > 30 && bmi <= 39.9){
+        document.getElementById('chiSo').value=bmi
+        document.getElementByClassName('anh')[0].src = "./beophi1_2.jpg"
+    }
+    if(bmi >= 40){
+        document.getElementById('chiSo').value=bmi
+        document.getElementByClassName('anh')[0].src = "./beophinang.jpg"
+    }
+    }
+</script>
+</body>
+</html>

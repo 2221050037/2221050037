@@ -38,6 +38,7 @@
     </div>
 
 
+
     <script>
         //Tạo cấu trúc prompt gõ Họ và tên và in ra ngoài màn hình 
         // let ten = prompt("Nhập họ và tên của bạn", "Nhập họ và tên")
@@ -64,6 +65,7 @@
 
     //     // Gọi hàm với tham số vừa nhập (chuyển sang kiểu số)
     //     chaoNhieuLan(Number(soLan));
+    
         // function tinhTong(){
         //     let soThuNhat = parseFloat(document.getElementById("soThuNhat").value)
         //     let soThuHai = parseFloat(document.getElementById("soThuHai").value)
@@ -84,9 +86,9 @@
         // }
 
         function tinhDiem(){
-            let diemA = parseFloat(document.getElementById("diemA").value)
-            let diemB = parseFloat(document.getElementById("diemB").value)
-            let diemC = parseFloat(document.getElementById("diemC").value)
+            let diemA = Number(document.getElementById("diemA").value)
+            let diemB = Number(document.getElementById("diemB").value)
+            let diemC = Number(document.getElementById("diemC").value)
         let canhBao = "";
             if(!diemA|| diemA<0|| diemA>10 ){
                 canhBao += "Vui lòng nhập lại điểm A";
@@ -101,27 +103,27 @@
                 alert(canhBao);
             }
         
-        let diemChu = diemA*0.6 + diemB*0.3 + diemC*0.1
-        if(diemChu > 9 && diemChu <10){
-            document.getElementById("ketQua").value = "A+"
+        let diemChu = diemA*0.6 + diemB*0.3 + diemC*0.1;
+        if(diemChu >= 9 && diemChu <= 10){
+            document.getElementById("ketQua").value = "A+";
         }
-        else if(diemChu >8 && diemChu<9 ){
-            document.getElementById("ketQua").value = "A"
+        else if(diemChu >= 8 && diemChu<9 ){
+            document.getElementById("ketQua").value = "A";
         }
-        else if(diemChu >7 && diemChu <8){
-            document.getElementById("ketQua").value = "B+"
+        else if(diemChu >=7 && diemChu <8){
+            document.getElementById("ketQua").value = "B+";
         }
-        else if(diemChu >6 && diemChu <7){
-            document.getElementById("ketQua").value = "B"
+        else if(diemChu >=6 && diemChu <7){
+            document.getElementById("ketQua").value = "B";
         }
-        else if(diemChu >5 && diemChu <6){
-            document.getElementById("ketQua").value = "C+"
+        else if(diemChu >=5 && diemChu <6){
+            document.getElementById("ketQua").value = "C+";
         }
-        else if(diemChu >4 && diemChu <5){
-            document.getElementById("ketQua").value = "C"
+        else if(diemChu >=4 && diemChu <5){
+            document.getElementById("ketQua").value = "C";
         }
         else{
-            document.getElementById("ketQua").value = "F"
+            document.getElementById("ketQua").value = "F";
         }
 
     }
