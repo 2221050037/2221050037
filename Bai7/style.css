@@ -100,8 +100,8 @@ main{
     
 }
 .cayphimhaymoingay1 img{
-    width:150px;
-    height:70px;
+    width:187px;
+    height:270px;
     padding-bottom: 15px;
     border-radius: 10px;
 }
@@ -137,4 +137,34 @@ margin-bottom: 10px;
 }
 .footer1-1 li{
     margin-bottom: 10px;
+}
+.banner{
+    position: relative;
+}
+.dsthongtin{
+    position: absolute;
+    bottom: 6px;
+    background-color: rgb(154, 128, 95,0.5);
+}
+.tt ul{
+    justify-content: center;
+    display:flex;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    color:black;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.trailer{
+    border-radius: 5px;
+    width: 50px;
+    padding: 2px;
+    background-color: orange;
+
+}
+.xemtruoc{
+    position: absolute;
+    bottom: 6px;
+    right: 6px; 
 }

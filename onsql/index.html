@@ -1,0 +1,67 @@
+<!-- CREATE DATABASE IF NOT EXISTS QUANLYXEMPHIM;
+
+USE QUANLYXEMPHIM;
+#function, tricger 
+#thể loại (mã thể loại, tên thể loại, varchar)
+#quốc gia (mã quốc gia, tên quốc gia, nvarchar)
+#phim (tên phim, mã phim, thể loại, đạo diễn, diễn viên, thời lượng, năm sản xuất, poster, nvarchar)
+#người dùng (tên người dùng, mã người dùng, phân quyền,giới tính, nvarchar)
+#diễn viên (tên diễn viên, mã diễn viên, giới tính, nvarchar)
+#đạo diễn (tên đạo diễn, mã đạo diễn,giới tính, nvarchar)
+#tập phim (số tập phim, thể loại tập phim, int)
+#mô tả: text bởi vì nhiều kí tự 
+#xây dựng cơ sở dữ liệu (yêu cầu: viết các câu lệnh để chạy nhiều lần không bị lỗi, mỗi người tạo khoảng 30 dữ liệu khác nhau ví dụ: )
+
+CREATE TABLE THELOAI(
+    MATL VARCHAR(20) PRIMARY KEY,
+    TENTL VARCHAR(20)
+    );
+    
+CREATE TABLE QUOCGIA(
+    MAQG VARCHAR,
+    TENQG VARCHAR
+    );
+CREATE TABLE PHIM(
+    MAPHIM VARCHAR,
+    TENPHIM VARCHAR,
+    THEL VARCHAR,
+    DDIEN VARCHAR,
+    DVIEN VARCHAR,
+    NAM INT,
+    POSTER VARCHAR
+    );
+CREATE TABLE NGUOIDUNG(
+    MAND VARCHAR,
+    MK VARCHAR(50),
+    TENNGUOIDUNG VARCHAR(50),
+    TENDANGNHAP VARCHAR,
+    EMAIL VARCHAR,
+    SDT CHAR,
+    PQ VARCHAR,
+    NGAYS DATETIME
+    );
+    
+CREATE TABLE QUYEN(
+    ID CHAR,
+    TENQUYEN VARCHAR
+    );
+    
+CREATE TABLE DVIEN(
+    TENDVIEN VARCHAR,
+    MADVIEN CHAR,
+    GIOITINH CHAR
+    );
+CREATE TABLE PHIM_DVIEN(
+    ID INT,
+    IDPHIM INT,
+    ID_DV INT
+    );
+    
+CREATE PHIM_THELOAI(
+    );
+    
+CREATE TABLE QUOCGIA(
+    
+    
+    );
+     -->

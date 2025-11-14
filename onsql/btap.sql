@@ -1,0 +1,51 @@
+-- CREATE DATABASE  IF NOT EXISTS  quan_ly_web_phim;
+--  USE quan_ly_xem_phim;
+-- 1. thể loại
+--  - id
+--  - tên thể loại
+-- CREATE TABLE TheLoai(
+--     id int PRIMARY KEY,
+--     tenTheLoai varchar(50));
+-- 2. người dùng
+-- - id int
+-- - tai_dang_nhap varchar
+-- - tenNguoiDung varchar(50)
+-- - matKhau varchar(50)
+-- - ho_ten varchar(50)
+-- - sdt varchar(10)
+-- - quyen_id int
+-- - ngay_sinh datetime
+-- 3. quyền
+-- - id int
+-- - ten_quyen varchar(20)
+-- 4. phim
+-- - id int primary key
+-- - ten_phim varchar
+-- - dao_dien_id int
+-- - nam_phat_hanh int
+-- - poster varchar
+-- - quoc_gia_id int
+-- - so_tap int
+-- - trailer varchar
+-- - mo_ta text
+
+-- 5. phim_dien_vien
+-- - id int
+-- - phim_id int
+-- - dien_vien_id int
+-- 6. phim_the_loai
+-- - id int
+-- - phim_id int
+-- - the_loai_id int
+-- 7. quốc gia
+-- - id int
+-- - ten_quoc_gia  varchar
+-- 8. Tập phim
+-- - id int
+-- - id phim int
+-- - số tập int
+-- - tieu_de varchar
+-- - trailer varchar
+
+-- - hoàn thiện CSDL để quản lý web phim
+-- - viết các câu lệnh để
