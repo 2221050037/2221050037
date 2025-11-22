@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    //1.in ra màn hình 
+    echo "Hello world! <br>";
+    echo "Hi <br>";
+    //2.biến
+    //cú pháp $+tên biến = giá trị của biến 
+    $ten = "Nguyễn Thúy"."<br>";
+    $tuoi = 22;
+    echo $ten;
+    echo $ten." ".$tuoi."<br>"; //dấu. dùng để nối kí tự lại với nhau
+    //3.Hằng
+    define("soPi", "3.14"."<br>");
+    echo soPi;
+    //4.Phân biệt '' và " "
+    echo '$ten'."<br>";
+    echo "$ten"."<br>";
+    //5.chuỗi
+    #5.1Kiểm tra độ dài của chuỗi
+    echo strlen($ten)."<br>";
+    #5.2 Đếm số từ
+    echo str_word_count($ten)."<br>";
+    #5.3. Tìm kiếm ký tự trong chuỗi
+    echo strpos($ten,"u")."<br>";
+    #5.4.Để thay thế ký tự trong chuỗi
+    echo str_replace("Thúy","Béo",$ten."<br>");
+    //6.Toán tử
+    $soThuNhat = 10;
+    $soThuHai = 5;
+    echo $soThuNhat + $soThuHai."<br>"; // + - * / tương tự 
+    #+= -= *= %= 
+    // echo $soThuNhat %= $soThuHai;
+    #so sánh == != > < >= <= === 
+    echo $soThuNhat < $soThuHai;
+    //7.Câu điều kiện
+    //Lưu ý elseif viết liền
+    //Kiểm tra tổng của số thứ nhất và số thứ 2 nếu < 15 thì in ra nhỏ hơn 15
+    //= 15 in tổng = 15
+    //còn lại là lớn hơn 15
+
+    $tong = $soThuNhat + $soThuHai;
+    if("$tong > 15"){
+        echo "Tổng lớn hơn 15";
+    }
+    elseif("$tong < 15"){
+        echo "Tổng nhỏ hơn 15";
+    }
+    elseif("$tong == 15"){
+        echo "Tổng bằng 15";
+    }
+    //8.switch case
+    $color = "red";
+    switch($color){
+        case"red":
+            echo "is red";
+            break;
+        case "blue":
+            echo "is blue";
+            break;
+        default:
+            echo "no color";
+            break;
+    }
+    //9.Vòng lặp for
+    for($i=0; $i<10; $i++){
+        echo $i."<br>";
+    }
+
+    //10.Mảng
+    $mang = ["An","Nhật Anh","Vũ Anh"];
+    //Đếm phần tử
+    echo count($mang);
+    echo $mang[1];
+    print_r($mang);
+    $mang[0] = "Hải Anh";
+    print_r($mang)
+    #xóa 
+    // unset($mang[3]);
+    // print_r($mang);
+    ?>
+</body>
+</html> -->
